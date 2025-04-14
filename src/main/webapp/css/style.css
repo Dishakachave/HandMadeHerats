@@ -1,0 +1,492 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: #fff9e1;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.bg-custom {
+	background: #fff9e1;
+}
+
+/* NavBar Styling*/
+/* Navbar Logo Image Styling */
+.logo-image {
+    max-height: 40px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Custom Navbar Toggler Icon */
+.custom-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(27, 95, 32, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .logo-image {
+        max-height: 40px; /* Adjust this value as needed */
+    }
+}
+
+@media (max-width: 767px) {
+    .logo-image {
+        max-height: 30px; /* Adjust this value as needed */
+    }
+}
+
+
+.navbar .nav-item .nav-link {
+	font-size: 15px;
+	color: black;
+	font-weight: bolder;
+}
+
+
+.navbar-custom .nav-item:hover .nav-link {
+	color: #1b5f20;
+	border-radius: 12px;
+}
+
+/* Icons Styling */
+.header-account, .header-wishlist, .header-cart {
+	color: black;
+	margin-left: 15px;
+	font-size: 1.5em;
+	position: relative;
+	transition: color 0.3s ease-in-out;
+}
+
+.header-account:hover, .header-wishlist:hover, .header-cart:hover {
+	color: #1b5f20;
+}
+
+.count {
+	font-size: 0.32em;
+    background: #a9ac2b;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    right: -5px;
+    color: white;
+}
+
+/* Search Bar Styling */
+.form-cont {
+	border: 2px solid #1b5f20;
+	border-radius: 20px;
+	padding: 5px 15px;
+	transition: all 0.3s ease-in-out;
+}
+
+.form-cont:focus {
+	border-color: #1b5f20;
+	box-shadow: 0 0 5px rgba(27, 95, 32, 0.5);
+	outline: none;
+}
+
+.btn-outline-success {
+	color: #1b5f20;
+	border-color: #1b5f20;
+	border-radius: 20px;
+	margin-left: 10px;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-outline-success:hover {
+	background-color: #1b5f20;
+	color: white;
+}
+
+/*Home Page Styling*/
+.back-img .text .tagline {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Merriweather', serif;
+	color: #ffffff;
+	margin-top: 20px;
+}
+
+.back-img .text .tagline span {
+	font-family: 'Pacifico', cursive;
+	color: #FF0000;
+}
+
+.back-img .text .logo {
+	height: 200px;
+	width: auto;
+}
+
+.back-img .text .explore-products {
+	text-align: center;
+	margin-top: 20px;
+}
+
+ .btn-explore {
+	font-family: "Mazzard Soft H";
+	white-space: nowrap;
+	color: #ffffff;
+	background-color: rgb(10, 71, 46);
+	border: none;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-align: left;
+	line-height: 18px;
+	letter-spacing: 0px;
+	font-weight: 700;
+	font-size: 12px;
+	padding: 18px 44px;
+	border-radius: 26px;
+	transform-origin: 50% 50%;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn-explore:hover {
+	color: #1b5f20;
+	background-color: #ffffff;
+	font-weight: 750;
+}
+
+.container-category .small-container .title{       /**/
+	text-align: center;
+	color: #1b5f20;
+	margin: 0 auto 80px;
+	position:relative;
+	line-height: 60px; 
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+.container-category .small-container .title::after{   /**/
+	content: '';
+	background: #a0ad49;
+	width:80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.container-category h4{          /**/
+	color:#a0ad49;
+	font-weight: normal;
+}
+
+.rating .fa{                       /**/
+	color:#1b5f20;
+}
+.col-4 p{                       /**/
+	font-size: 14px;
+}
+.container-category {              /**/
+    background-color: white;
+    margin: 35px 35px;
+}
+
+.container-category .small-container{     /**/
+	max-width: 1080px;
+	margin:auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.container-category .col-3{        /**/
+	flex-basis: 30%;
+	min-width:250px;
+	margin-bottom: 30px;
+} 
+.container-category .col-3 img {    /**/
+    width: 100%;
+   
+}
+.container-category .row {                            /**/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-category .col-4 {
+    flex-basis: 22%;
+    margin: 1%;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+}
+.container-category .col-4:hover {
+    transform: translateY(-10px);
+}
+.col-4 img{                         /**/
+	width:100%;
+}
+
+.container-category .offer {
+    background-color: #e2f3e9;
+    padding: 30px 0;
+}
+
+.container-category .offer .small-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container-category .offer .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container-category .offer .col-2 {
+    flex-basis: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.offer-img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    height: 400px;
+    padding:50px;
+}
+
+.offer h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #333;
+}
+
+.offer p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.offer small {
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.5;
+}
+
+
+/*Items styling*/
+
+.container-items {
+    background-color: white;
+    padding: 30px 0;
+    margin:35px 35px;
+}
+
+.container-items .small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.container-items .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-items .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+    max-width: 180px;
+    box-sizing: border-box;
+}
+
+.container-items .item img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.container-items .item .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-items .item h5 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #1b5f20;
+    font-family: "Mazzard Soft H";
+    font-weight: 900;
+}
+
+.container-items .item small {
+    color: #777;
+    font-size: 0.8em;
+   	font-family: "Mazzard Soft H";
+    
+}
+
+
+/*Register Page Styling*/
+.container {
+	max-width: 1200px;
+	margin-top: 30px;
+}
+
+.card {
+	border: none;
+}
+
+.custom-header {
+	background: #fff9e1;
+	border-color: white;
+}
+
+.headername-login {
+	background: #fffcf0;
+}
+
+.custom-body-login {
+	background: #fffcf0;
+}
+
+.custom-body-register {
+	background: #fff9e1;
+}
+
+.custom-header .header-name {
+	color: #1b5f20;
+	font-family: "Mazzard Soft H", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	margin: 0 0 0.5em;
+	font-size: 1.5em;
+	margin-left: 30px;
+	font-weight: bolder;
+	padding-top: 20px;
+}
+
+.forms {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.forgot-password-link {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #555555;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+.btn-success {
+	background: #205300;
+	border-radius: 3px;
+	border: none;
+	padding: 0.6180469716em 1.41575em;
+	font-weight: 700;
+	width: 100%;
+	margin-top: 20px;
+}
+.btn-success .btn-block:hover{
+	background-color: #a9ac2b;
+}
+
+/*        footer        */
+
+.footer-section {
+    background: #1b1b1b;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-col {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    max-width: 190px;
+    margin-bottom: 20px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-col h4::after {
+    content: '';
+    background: #ff523b;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    color: #ff523b;
+}
+
+.footer-col ul li i {
+    margin-right: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #ff523b;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: #fff;
+    color: #ff523b;
+}
+
+hr {
+    border-top: 1px solid #bbb;
+}
+
+.footer-section .text-center {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-col {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer-logo {
+        margin: 0 auto 20px;
+    }
+}
